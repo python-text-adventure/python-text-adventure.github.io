@@ -10,19 +10,19 @@ a:hover {
   color: black;
 }
 
-.previous {
+.toc {
   background-color: #f1f1f1;
   color: black;
 }
 
-.next {
+.main {
   background-color: #f1f1f1;
   color: black;
 }
 	
 .home {
  background-color: #777;
- color: white;
+ color: black;
 }	
 
 .round {
@@ -33,6 +33,7 @@ a:hover {
 	margin-left: auto;
 	margin-right: auto;
 }
+div {text-align: center;}
 img{max-width: 100%;
 	height: auto;}
 h1 {text-align: center;}
