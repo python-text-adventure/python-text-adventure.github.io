@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../stylesheet.css">
+<title>Using Numbers and Operators in Python</title>
+</head>
+
+<body>
+	<h1>Using Numbers and Operators in Python</h1>
+<p>Below is a diagram of all the types of numbers that you learned about in your math classes</p>
+<p><img src="images/The_Real_Number_System.png" alt=""/><br>
+Anzarta [CC BY-SA 3.0 (<a href="https://creativecommons.org/licenses/by-sa/3.0">https://creativecommons.org/licenses/by-sa/3.0</a>)]</p>
+<p>In computer science, we use slightly different terms to describe numbers.</p>
+<h2>Integers</h2>
+<p>Just like you learned in your math class, integers are the set of all the positive and negative numbers with no decimal. Whole numbers and the counting numbers are including in the integers. In computer science, we often integers by their abbreviation, int (or ints), after the name of the built-in function int( ). We can perform any arithmetic operation on integers in Python.</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/fe66456f83" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>You will notice from the above examples, the answer stayed as an integers for all except the division. Even if the division of two integers results in a whole number answer, Python print out a decimal by default.</p>
+<h2>Additional Operators</h2>
+<p>The basic arithmetic operators that are included in Python by default:<br>
+
+  <strong>Exponentiation :</strong> x to the power of y<br>
+
+x ** y</p>
+<div>
+<iframe src="https://trinket.io/embed/python/27dd0958fb" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p><strong>Negation</strong>: negative x <br>
+-x
+</p>
+<div>
+<iframe src="https://trinket.io/embed/python/1ad1aed2a8" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p><strong>Floor Division</strong>: the whole number answer after integer division of x by y<br>
+
+x // y <br>
+
+Consider the long division example:<br>
+<img src="images/long_division.gif" alt=""/> </p>
+<div>
+<iframe src="https://trinket.io/embed/python/6d7c8836b9" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>To yield the remainder for the above example, we use <br>
+
+  <strong>Modulo</strong>: remainder after integer division of x by y <br>
+
+x % y
+</p>
+<div>
+<iframe src="https://trinket.io/embed/python/4333d00bd2" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>Compare the floor division and modulo to integer division:</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/2d292d2822" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+	<p>For the above examples,<br>
+
+25.6 = 25 remainder 3<br>
+
+The different operators allows us to write equivalent values in different ways.</p>
+<h2>Order of Operations</h2>
+<img src="images/orderoperations.png" alt=""/>
+<p>The operators higher in the table are evaluated before operations lower in the table. For any operators on the same level, they are evaluated from left to right.</p>
+
+<p><strong>Practice #1</strong><br>
+For the following practice questions, put brackets around groups of numbers to see how the results change:</p>
+<div>
+<iframe src="https://trinket.io/embed/python/df886c00ae" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<h2>Operators on Strings</h2>
+<p>Some arithmetic operators can be applied to string operands, but their meanings are different. The “addition” of two strings results in their concatenation, which means just joining them together one after the other. The “multiplication” of a string and a number n concatenates the string with itself n times. For example, the expression ‘Winter’ + ‘is’ + ‘coming!’ produces the string value ‘Winteriscoming!’. The expression ‘Na’ * 8 + ‘ BATMAN!’ produces the string value ‘NaNaNaNaNaNaNaNa BATMAN!’.</p>
+<div>
+<iframe src="https://trinket.io/embed/python/eee6e8b7e0" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<h2>Floating-Points</h2>
+<p>
+So far we have only learned about how to deal with integers in Python. If you refer back to the diagram of numbers at the top, we need a way to express values that have a decimals. In computer science, we call these numbers floating-point data (or floats). Floating point numbers can have up 17 digits of precision (decimals).<br>
+
+Any number with a decimal is a floating-point number. For example:</p>
+<div>
+<iframe src="https://trinket.io/embed/python/089c5d0192" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>You can see that even a whole number, like 42, can be written as a float. You don't even need to put a 0 after the decimal for the number to become a float.
+
+We can also write floats in scientific notation. For example, the speed of light is 3x10<sup>8</sup> m/s, but we can write it as
+</p>
+<div>
+<iframe src="https://trinket.io/embed/python/b87d923154" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>If you use an operator with an integer and a float, the result will be a float:</p>
+<div>
+<iframe src="https://trinket.io/embed/python/286804dca9" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<h2>Concatenation of Numbers and Strings</h2>
+<p>What happens when we try to print text and numbers? Consider the example below:</p>
+<div>
+<iframe src="https://trinket.io/embed/python/caff4b24a7" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>I will receive a TypeError message because you can only add numbers to numbers or add strings to strings. To be able to print my message properly, I need to convert the number to a string using the string function str( ). Consider the above example again:</p>
+<div>
+<iframe src="https://trinket.io/embed/python/367cdb1bc3" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>We can also convert floats to strings:</p>
+<div>
+<iframe src="https://trinket.io/embed/python/2b6e9a606a" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>Similarly, we can convert strings into numbers. To change a string to an integer, you can use the int( ) function. The below example will receive another TypeError.</p>
+<div>
+<iframe src="https://trinket.io/embed/python/eb4316a7ce" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>If I change num1 to an integer, then I will be able to complete the addition:</p>
+<div>
+<iframe src="https://trinket.io/embed/python/18d60cc00e" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>We can also convert strings into floats using the float( ) function: </p>
+<div>
+<iframe src="https://trinket.io/embed/python/47d3745e34" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>Converting a string into a number, only works if there is only a number contained in the string:
+</p>
+<div>
+<iframe src="https://trinket.io/embed/python/e81af1736d" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>The above code will produce a ValueError because Python cannot figure out which part of the string is the number.</p>
+
+<p><strong>Practice #2</strong><br>
+
+Store your age in a varaible as a number. Using that variable, print out a message that states your name and what your age is.
+</p>
+<div>
+<iframe src="https://trinket.io/embed/python/cf79ab0aae" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p><strong>Practice # 3</strong><br>
+
+Using the aritmetic operators, print at at least 4 additional statements that result in 8 using strings and numbers. You can only use each operator once. I completed one with addition:
+</p>
+<div>
+<iframe src="https://trinket.io/embed/python/27df16a2c7" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<div>
+	<a href="../toc.html" class = "toc">Table of Contents</a>
+	<a href="../index.html" class="home">Home</a>
+	<a href="python_review.html" class="review">CS 20 Review</a>
+</div>
+</body>
+</html>
