@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../stylesheet.css">
+<title>CS 20 Review: Conditional Tests</title>
+</head>
+
+<body>
+	<h1>CS 20 Review: Conditional Tests</h1>
+<p>Notes partially adapted from<br>
+
+Chapter 5: If Statements - Conditional Tests, Python Crash Course, Eric Matthes, 2016<br>
+
+Chapter 11 - Conditional Branching, Introduction to Creative Computing, Jeff Long, 2016</p>
+<p>You may remember that we previously learned that control statements are algorithm that tell us under what conditions certain other actions should be carried out. For example:</p>
+<blockquote>try turning doorknob<br>
+if the door is locked:
+    <blockquote>insert key into lock<br>
+    turn key<br>
+    remove key from lock</blockquote>
+turn knob and open door</blockquote>
+<p>If the door is unlocked, the part of the algorithm where the door is unlocked is skipped and it does straight to opening the door. Because the writer of the algorithm does not know if the door is locked or not, they have to consider all situations or conditions that someone could come across. This is called conditional branching , because depending on certain conditions, different branches of the algorithm will be followed when it is executed.</p>
+<p>We evaluate a conditional statement as either True or False - you may recall that this is Boolean data. Consider the doorknob example again:</p>
+<p><img src="images/door_knob.jpg" alt=""/></p>
+<p>You can see at the question "Is the door locked?" that the algorithm branches off into two choices: Yes or No (True or False could also be in place). Programming languages like Python use True or False to tell us if a condition statisfies a specified relationship.</p>
+<h2>Relational Operators</h2>
+<p>Relational operators are symbols that show how data is connected to each other. Here are a list of the relational operators and how they are written in Python and in Mathematics:</p>
+<p><img src="images/relational.jpg" alt=""/><br>
+	source: “Comparing Values.”(Image), Medium, Intro to Programming, 14 Feb. 2018, medium.com/mslim/comparing-values-407c7bdc1fa1
+</p>
+<p>You will notice that comparing if two values are equal uses two equal signs ==. This is because when we use a single equal sign = that means that I am assigning a value to data. For example:</p>
+<p><strong>Example #1</strong></p>
+<div>
+<iframe src="https://trinket.io/embed/python/39a994157e" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>Here are some additional examples of using Python to check if a Boolean statements is True or False. </p>
+<p><strong>Example #2</strong></p>
+<div>
+<iframe src="https://trinket.io/embed/python/dc3d21dc43" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p><strong>Example #3</strong></p>
+<div>
+<iframe src="https://trinket.io/embed/python/4be636b085" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p><strong>Example #4</strong><br>
+When checking string values, the case of the letters matter.	
+</p>
+<div>
+<iframe src="https://trinket.io/embed/python/c8fdff5574" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p><strong>Example #5</strong><br>
+	We can also check for inequality.
+	</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/35060a3cc6" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>Checking the validity of multiple statements in Python is much easier than some other programming languages because it uses English statements rather than symbols.<br>
+
+If we want to test if two or more conditions are met simultaneously, we use the word and. If we want to test if either of two or more conditions are met simulatenously, we use the word <strong>or</strong>.</p>
+<p><img src="images/venn.jpg" alt=""/></p>
+<p><strong>Example #6</strong></p>
+<div>
+<iframe src="https://trinket.io/embed/python/d12ddeff0f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p><strong>Example #7</strong></p>
+<div>
+<iframe src="https://trinket.io/embed/python/630b7bb9a4" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p><strong>Practice #1</strong><br>
+	Create your own Boolean statement using any relational operator.
+</p>
+<p><strong>Practice #2</strong><br>
+	Create your own Boolean statement showing inequality.
+	</p>
+<p><strong>Practice #3</strong><br>
+	Create your own False Boolean statement using &gt;= or &lt;=.
+	</p>
+<p><strong>Practice #4</strong><br>
+	Create multiple Boolean statements and test if their conditions are met simultaneously.
+	</p>
+<p><strong>Practice #5</strong><br>
+	Create two Boolean statements and test if all conditions are met simultaneously.
+	</p>
+<p><strong>Practice #6</strong><br>
+Create two Boolean statements and test if either conditions are met. 	
+	</p>
+<div>
+<iframe src="https://trinket.io/embed/python/cf79ab0aae" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<br>
+<div>
+	<a href="../toc.html" class = "toc">Table of Contents</a>
+	<a href="../index.html" class="home">Home</a>
+	<a href="python_review.html" class="review">CS 20 Review</a>
+</div>
+</body>
+</html>
