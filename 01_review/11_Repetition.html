@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../stylesheet.css">
+<title>CS 20 Review: Repetition</title>
+</head>
+
+<body>
+<h1>CS 20 Review: Repetition</h1>
+	<p>Very frequently in computer programming we would like to repeat certain actions. Sometimes we want to repeat these actions a specific number of times. Other times, we want to repeat some actions as long as some specified condition (i.e. <a href="03_Boolean_Data.html">Boolean expression</a>) is True. Sometimes we’d like to repeat some actions for every element of data in some collection of data elements. In Python, we can do all of these things using loops.</p>
+<h2>while - loops</h2>
+<p>While-loops work a lot like an if-statement in that they have very similar syntax — a condition followed by a block—but the block can be executed multiple times as long as the condition is True. While-loops consist of the word while, followed by a Boolean expression (the loop condition), followed by a colon, followed by a block of code.</p>
+	<p><img src="images/while-loop.jpg" alt=""/></p>
+<p>Consider the following guessing game:</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/4ecc304f1b" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<h2>while-Loops for Counting</h2>
+	<p>While loops can also be used to execute a block of code a pre-determined number of times. These are called counting loops because an integer variable is used to count the number of times the block has executed, and the loop condition is such that the condition is True as long as the loop has executed fewer than the required number of times. For example,</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/12d25642f1" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+	<p>For the above example, i=i+1 has meaning because it's not a mathematical statement, but we are assigning a new value to i during each loop. We can also write it as a shortcut:</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/a4ec0fbef2" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>Both of the above example counts 1-5 before exiting the loop. Here's a another example that adds up the sum of the natural numbers:</p>	
+	<div>
+<iframe src="https://trinket.io/embed/python/7af5216d6d" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+	<p><strong>Practice #1</strong><br>
+Create a program that adds up the even numbers less than 20 using a while loop.</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/cf79ab0aae" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<h2>while-loop with else</h2>
+<p>Once the statement in a while loop becomes False, we can have it execute another action using an else statement:</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/9189458fc8" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<h2>for-loops</h2>
+<p>In Python, for-loops allow repetition of a block of code for each data item in a sequence. Right now we know about one kind of sequence: strings. For example:</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/31ff53a4b6" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>In general, the syntax of a for-loop consists of the word for, followed by a variable name, followed by the word in, followed by a sequence, followed by a colon, followed by a block: </p>
+	<p><img src="images/for_loop.jpg" alt=""/></p>
+	<p><strong>Practice #2</strong><br>
+For the banana example above, add an exclamation mark after each letter.</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/31ff53a4b6" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<h2>Ranges and Counting for-loops</h2>
+<p>We can use for-loops to create counting loops just like we did with while-loops. To do so, we first need to learn about a new kind of sequence called a range.</p>
+<p>
+A range is a sequence of integers that begins at an integer a (the start), ends before an integer b (the stop), and in which the difference between each element in the sequence, called the step size, is equal. Ranges are created with Python’s built-in range function. The range function requires two arguments, start and stop, and can optionally accept a third argument for the step size which, if not given, defaults to 1. You may also provide just a single argument to range; range(x) is equivalent to range(0, x, 1), and is the sequence 0, 1, 2,...., x-1. Here are some example ranges: </p>
+	<p><img src="images/range.jpg" alt=""/></p>
+<p>Remember: the value stop is not part of the sequence.</p>
+<p>Ranges can be used to write counting for-loops. Here is a for-loop that repeats its block exactly N times:</p>
+	<p><img src="images/range_loop.jpg" alt=""/></p>
+<p>In this loop, i refers to the value 0 on the first repetition, 1 on the second repetition, and so on, up to N-1 on the last repetition. It is equivalent to the following while-loop: </p>
+	<p><img src="images/while_comparison.jpg" alt=""/></p>
+	<p><strong>Example:</strong> Create a sequence of numbers from 3 to 5, and print each item in the sequence</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/a980aeb072" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+	<p><strong>Example:</strong> Create a sequence of numbers from 3 to 19, but increment by 2 instead of 1</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/55c5fc3b58" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+	<p>Consider the following example of adding up the even numbers less than 20:</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/1062ff9d51" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+	<p><strong>Practice #3</strong><br>
+	Change the code so the number 20 is included.
+	</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/1062ff9d51" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+	<h2>Choosing the Right Kind of Loop</h2>
+	<p>Generally, for-loops are what you want to use to iterate over a sequence. Both for-loops and while-loops are appropriate for simple counting loops. You may prefer using for-loops with ranges for counting purposes because it requires less typing than the equivalent while-loop. For most other non-counting loops that have complicated loop conditions and/or don’t involve iterating over sequences, while-loops are likely the best choice.</p>
+	<h2>Infinite Loops</h2>
+	<p>Infinite loops are loops that repeat forever. A while-loop whose loop condition can never become False is an infinite loop. Here are a couple of examples:</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/5124ca4711" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+<iframe src="https://trinket.io/embed/python/a4141ee531" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+	</div>
+	<br>
+<div>
+	<a href="../toc.html" class = "toc">Table of Contents</a>
+	<a href="../index.html" class="home">Home</a>
+	<a href="python_review.html" class="review">CS 20 Review</a>
+</div>
+</body>
+</html>
