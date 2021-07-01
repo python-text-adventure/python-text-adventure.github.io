@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../stylesheet.css">
+<title>An Overview of the Python Style Guide</title>
+</head>
+
+<body>
+	<h1>An Overview of the Python Style Guide</h1>
+<h2>Python Style Guide: PEP8 Introduction</h2>
+	<p>Just like when you write an essay for English or Social Studies, Python has a styleguide for formatting called PEP8. We format code because in the real world, code is more often read by other people than the original programmer. We format code to make it easier to read for other people. We can use built-in format checkers or websites like <a href="http://pep8online.com/" target="new">PEP8 online</a> to check that our code adheres to the Python Style guide.</p>
+<h2>Naming Conventions</h2>
+	<p>Variable names (also called identifiers) in Python have to follow the following rules:</p>
+	<ul>
+	  <li>may contain letters or digits, but cannot start with a digit;</li>
+	  <li>may contain underscore (_) characters and may start with an underscore; and</li>
+	  <li>may not contain spaces or other special characters.</li>
+	  <li>Never use l (lowercase L), O (uppercase o), or I(uppercase i) single letter names as these can be mistaken for 1 (one) and 0 (zero), depending on typeface</li>
+</ul>
+	<p>Thus, KyloRen, IG88, and luke_Skywalker are valid variable names, but these are not: Luke+Leia_4_Evar (contains special character +), 2ManyStormTroopers (starts with a digit), and Han Shot First (contains spaces).</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/b8760ae4af" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<h2>Naming Styles</h2>
+	<p>Here are some naming styles that are relevant to CS 20:</p>
+<table width="100%" border="0">
+	  <tbody>
+	    <tr>
+	      <th scope="col">Type</th>
+	      <th scope="col">Naming Convention</th>
+	      <th scope="col">Examples</th>
+        </tr>
+	    <tr>
+	      <td>Function</td>
+	      <td>Use a lowercase word. Separate words using underscores to improve readability.</td>
+	      <td>function, my_function</td>
+        </tr>
+	    <tr>
+	      <td>Variable</td>
+	      <td>Use a lowercase word. Separate words using underscores to improve readability.</td>
+	      <td>x, var, my_variable</td>
+        </tr>
+	    <tr>
+	      <td>Constant</td>
+	      <td>Use an uppercase single letter, word, or words. Separate words with underscores to improve readability.</td>
+	      <td>PI, CONSTANT, MY_CONSTANT</td>
+        </tr>
+      </tbody>
+</table>
+<h2>How to Choose Names</h2>
+	<p>The best way to name your objects in Python is to use descriptive names to make it clear what the object represents.</p>
+	<p>When naming variables, you may be tempted to choose simple, single-letter lowercase names, like x. But, unless you’re using x as the argument of a mathematical function, it’s not clear what x represents. Imagine you are storing a person’s name as a string, and you want to use string slicing to format their name differently. You could end up with something like this:</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/1181bef2f7" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+	<p>It seems natural to use the variables that we are used to in formulas, but we have to be careful to avoid l, O, and I. For example:</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/a8a8d98190" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+	<p>Both of the above example run the same but the second one is easier for a human to detect what the variables are.</p>
+	<p>Consider the following function that calculates area of a rectangle:
+	</p>
+<div>
+<iframe src="https://trinket.io/embed/python/4a6be2a819" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>ar is not a very descriptive function name. Here's a better way:</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/e0a2a76fad" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>Even though I abbreviated rectangle to rect, area_rect gives me a better idea of what the function does than ar.</p>
+<h2>Code Layout</h2>
+	<p>How you lay out your code has a huge role in how readable it is. Vertical whitespace, or blank lines, can greatly improve the readability of your code. Code that’s bunched up together can be overwhelming and hard to read. Similarly, too many blank lines in your code makes it look very sparse, and the reader might need to scroll more than necessary.</p>
+	<p>For functions, have <strong>two blank lines above and below</strong>:</p>
+	<div>
+	<iframe src="https://trinket.io/embed/python/86e5d3b57a" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+	<iframe src="https://trinket.io/embed/python/c977b1a3a5" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+	</div>
+	<p>Use <strong>blank lines sparingly inside functions to show clear steps</strong>. Sometimes, a complicated function has to complete several steps before the return statement. To help the reader understand the logic inside the function, it can be helpful to leave a blank line between each step.</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/3655311ba9" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+	<p>An even better way would be to put comments where the blank lines are:</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/99480b72b1" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<h2>Maximum Line Length and Line Breaking</h2>
+	<p><a href="https://www.python.org/dev/peps/pep-0008/" target="new">PEP 8</a> suggests lines should be limited to 79 characters. This is because it allows you to have multiple files open next to one another, while also avoiding line wrapping. Of course, keeping statements to 79 characters or less is not always possible. PEP 8 outlines ways to allow statements to run over several lines.<br>
+</p>
+<p>If the code is contained in parentheses, Python will assume line continuation and you can just go to the next line:</p>
+<img src="images/Line_cont.jpg" width="426" height="94" alt=""/>
+<p>If line breaking needs to occur around binary operators, like + and *, it should occur before the operator. This rule stems from mathematics.</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/55b481bacb" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+	<p>Breaking before binary operators produces more readable code, so PEP 8 encourages it. Code that consistently breaks after a binary operator is still PEP 8 compliant. However, you’re encouraged to break before a binary operator.</p>
+	<h2>Indentation</h2>
+	<p>Identation in Python, as we have learned, determines how statements are grouped together. For example, consider the following code:</p>
+<img src="images/indent.jpg" width="426" height="167" alt=""/>
+	<p>For the above code, the indentation tells us which code is executed depending on which statement is True.</p>
+	<p>The indentation rules layed out by PEP8:	  </p>
+	<ul>
+	  <li>Use 4 consecutive spaces to indicate indentation.	  </li>
+	  <li>Prefer spaces over tabs.	  </li>
+</ul>
+	<p>Tabbing can be much easier than the space bar so we will set up the editor so it inserts spaces
+	  when we tab.</p>
+	<h2>Comments</h2>
+	<p>You should use comments to document code as it’s written. It is important to document your code so that you, and any readers, can understand it. When you or someone else reads a comment, they should be able to easily understand the code the comment applies to and how it fits in with the rest of your code.<br>
+    Some points to remember when adding comments:</p>
+	<ul>
+	  <li>Limit the line length of comments and docstrings to 79 characters.</li>
+	  <li>Use complete sentences, starting with a capital letter.</li>
+	  <li>Make sure to update comments as your code changes (it's easier to remember what is<br>
+	    happening)</li>
+</ul>
+<h2>Block Comments</h2>
+<p>Use block comments to document small sections of code instead of writing a comment for each line. Follow these rules for writing block comments:</p>
+<ul>
+  <li>Indent block comments to the same level as the code they describe.</li>
+  <li>Start each line with a # followed by a single space.</li>
+</ul>
+<div>
+<iframe src="https://trinket.io/embed/python/2b6ce4d244" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+	<h2>Inline Comments</h2>
+<p>Inline comments are on the same line as the code and should be used sparingly. Sometimes, inline comments can seem necessary, but you can use better naming conventions instead. Here’s an example:</p>
+<p><img src="images/inline.jpg" width="426" height="37" alt=""/></p>
+<p>Here, the inline comment does give extra information. However using x as a variable name for a person’s name is bad practice. There’s no need for the inline comment if you rename your variable:</p>
+<p>
+<img src="images/no_inline.jpg" width="426" height="37" alt=""/></p>
+<p>Avoid comments, particularly inline comments, that state the obvious. For example:</p>
+<p><img src="images/obvious.jpg" width="426" height="101" alt=""/></p>
+<p>It is obvious that x is multpied by 5 so it is not necessary to put it in the comments.</p>
+<h2>Document Strings</h2>
+<p>Document strings, or docstrings, appear in quotation marks on the first line of any function. Important rules to consider:</p>
+<ul>
+  <li>Surround docstrings with three double quotes on either side, as in &quot;&quot;&quot;This is a docstring&quot;&quot;&quot;.</li>
+  <li>Write them for all public modules, functions, classes, and methods.</li>
+  <li>Put the &quot;&quot;&quot; that ends a multiline docstring on a line by itself</li>
+  <li>For one-line docstrings, keep the &quot;&quot;&quot; on the same line</li>
+</ul>
+<p>An example of a one-line docstring:</p>
+<p><img src="images/quad_single.jpg" width="426" height="129" alt=""/></p>
+<p>Example of a multiline docstring:</p>
+<p><img src="images/quad_multi.jpg" width="616" height="257" alt=""/></p>	
+	<h2>Whitespace in Expressions and Statements</h2>
+<p>Whitespace in statements can make the code more readable by allowing us to visually group terms together in a statement. When performing a mathematic calculation, only put one space around the operation you will perform last.</p>
+<div>
+<iframe src="https://trinket.io/embed/python/6d9bccc242" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<h2>Trailing Whitespace</h2>
+	<p>Whitespace on either side of an operator can be useful for reading but whitepace at the end of punctuation or at the end of the line can cause errors. It is recommended that you add a space after a comma, semi-colon, or colon, but not after:</p>
+	<p><img src="images/whitespace.jpg" width="616" height="218" alt=""/></p>
+	<p>Do not put a space before brackets:</p>
+	<p><img src="images/whitespace_bracket.jpg" width="616" height="218" alt=""/></p>
+<h2>When to Ignore PEP8</h2>
+	<p>To make a long story short, ignore PEP8 rules like line length if it prevents your code from working properly. For example, don't break up a URL:</p>
+	<div>
+<iframe src="https://trinket.io/embed/python/52e63cbca0" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p><strong>Source:</strong> Finer, Jasmine. “How to Write Beautiful Python Code With PEP 8.” Real Python, Real Python, 7 Nov. 2020, realpython.com/python-pep8/.</p>
+	<br>
+<div>
+	<a href="../toc.html" class = "toc">Table of Contents</a>
+	<a href="../index.html" class="home">Home</a>
+	<a href="PEP8.html" class="review">Understanding the Python Style Guide</a>
+</div>
+</body>
+</html>
