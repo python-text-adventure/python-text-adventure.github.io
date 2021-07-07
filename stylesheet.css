@@ -11,19 +11,34 @@ a:hover {
 }
 
 .toc {
-  background-color: #f1f1f1;
-  color: black;
+    background-color: #f1f1f1;
+    color: black;
+    width: 20%;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .review {
-  background-color: #f1f1f1;
-  color: black;
+    background-color: #f1f1f1;
+      color: black;
+      width: 20%;
+      height: 2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 }
-	
+
 .home {
- background-color: #777;
- color: black;
-}	
+    background-color: #777;
+    color: white;
+    width: 20%;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .round {
   border-radius: 50%;
@@ -37,7 +52,7 @@ a:hover {
 .iframe-container{
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; 
+  padding-bottom: 56.25%;
   height: 0;
 }
 .iframe-container iframe{
@@ -48,7 +63,20 @@ a:hover {
   height: 100%;
 }
 .tab { margin-left: 40px; }
-
+.linkContainer{
+    display: flex;
+    justify-content: center;
+}
+table{table-layout: auto;
+	  width: 100%;}
+@media only screen and (min-width: 700px) {
+    table{
+        table-layout: auto;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 div {text-align: center;}
 img{max-width: 100%;
 	height: auto;}
