@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../stylesheet.css">
+<title>Checking for Values in a List, Tuple, or Dictionary</title>
+</head>
+
+<body>
+<h1>Checking for Values in a List, Tuple, or Dictionary</h1>
+    <p>Lesson adapted from Programiz: Python Tuple <a href="https://www.programiz.com/python-programming/tuple">
+        https://www.programiz.com/python-programming/tuple</a>
+    <p>Lesson adapted from Delftstack: Check if a Value Is in a Dictionary in Python <a href="https://www.delftstack.com/howto/python/python-check-if-value-in-dictionary/">
+        https://www.delftstack.com/howto/python/python-check-if-value-in-dictionary/</a></p>
+
+<p>For the small lists, tuples, and dictionaries we've seen so far, it is
+easy to manually check for data. For large sets of data or when you rely on
+user input for things like text-based adventure games, you need a way to be able
+to check for data automatically.
+</p>
+<p>To check a list or tuple for a value, we can use the keyword <strong>in</strong>
+    to yield a True or False value. We can use these True or False statements to
+create conditional statements for our RPG. In the code below, the statement</p>
+<blockquote>
+if action_input.lower() in possible_actions:
+</blockquote>
+<p>checks if the user input is in the list of valid actions.
+</p>
+<div>
+
+    <iframe src="https://trinket.io/embed/python3/491e0a63b4" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+</div>
+<p>You would check a tuple the same way as a list. For example:</p>
+<div>
+
+    <iframe src="https://trinket.io/embed/python3/4907929c82" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+</div>
+<p>For a dictionary, we still use the in keyword but it only checks the value and not the key.
+    (Remember that the key is the element before the colon and the value is the element
+after the colon.) For example: </p>
+<div>
+
+    <iframe src="https://trinket.io/embed/python3/2656e76334" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<h2>Checking if an Element is Not in a List, Tuple, or Dictionary</h2>
+<p>We can also check if a value is not in a list, tuple, or dictionary by using the
+    keyword <strong>not</strong> and adding it to in. Consider the Simple Hero Game again:
+</p>
+<div>
+
+    <iframe src="https://trinket.io/embed/python3/491e0a63b4" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+</div>
+<p>Instead of the else-statements, I replaced it with </p>
+<blockquote>
+elif direction_input.lower() not in possible_directions:
+</blockquote>
+<br>
+    <div class="linkContainer">
+    <a href="../toc.html" class = "toc">Table of Contents</a>
+    <a href="../index.html" class="home">Home</a>
+    <a href="data_structures.html" class="review">Data Structures Home</a>
+</div>
+</body>
+</html>
