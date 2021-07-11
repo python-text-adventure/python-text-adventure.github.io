@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<title>Libraries</title>
+</head>
+
+<body>
+	<h1>Libraries</h1>
+<p>Partially Adapted from Matthes, Eric, "Chapter 9: Classes - The Python Standard Library", Python Crash Course (2 ed),
+    No Starch Press, Inc., 2019
+</p>
+<p>
+Python is a modular programming language which means that some classes, functions, keywords,
+and methods are built-in but others are imported when needed. Many modules need to
+be installed on your computer to work, but the <a href="https://docs.python.org/3/library/" target="new">
+Python Standard Library</a> is a set of modules included with every Python installation.
+You can use any class of function in the standard library by putting an import
+statement at the top of your Python file.
+</p>
+<p>Let's revisit some examples that use the Python Standard Library. The following is
+an example that uses the sys module so we can quit the game:</p>
+<div>
+
+    <iframe src="https://trinket.io/embed/python3/491e0a63b4" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+</div>
+<p>You'll notice on line 33 that there is sys.exit(). Calling something from a module is in the
+form
+</p>
+<blockquote>[module name].[module function]</blockquote>
+<p>For the randomized map, I used the function choice from the random module in lines 19, 20 and 29:</p>
+<div>
+
+    <iframe src="https://trinket.io/embed/python3/89299ef827" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+</div>
+<p>Using Trinket, they have <a href="https://trinket.io/docs/python" target="new">a list of modules </a>
+    outside the Python Standard Library and you are not able to install anymore. If you want a module that is not
+    included in Trinket, you are better off using an installed version of Python on a computer or a  website
+    like <a href="https://replit.com/" target="new">Repl.it</a>. Consider the random map example again in Replit
+    formatted using the module tabulate.
+</p>
+<div class="linkContainer">
+<iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/randomheromap?lite=true"></iframe>
+</div>
+<p>The maps are nicely formatted into rows and columns using the tabulate module. You will notice that the import statement
+is a little different. This time it is
+</p>
+<blockquote>from tabulate import tabulate</blockquote>
+<p>If you have ever used Processing in Trinket, you may recognize the import statement</p>
+<div>
+<iframe src="https://trinket.io/embed/python/b3b4a66749" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+<p>In this case the import statement has an asterisk (*) meaning that the entire module is imported and not just a part.
+    We will learn more about import statements when we learn how to make our own modules in the next section.</p>
+<br>
+	<div class="linkContainer">
+	<a href="toc.html" class = "toc">Table of Contents</a>
+	<a href="index.html" class="home">Home</a>
+	</div>
+</body>
+</html>
