@@ -1,41 +1,61 @@
 <!doctype html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../stylesheet.css">
-<title>Multiple Dimensional Lists</title>
-</head>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../stylesheet.css">
+      <title>Multiple Dimensional Lists</title>
+   </head>
+   <body>
+      <h1>Multiple Dimensional Lists</h1>
+      <p>We have looked at examples so far where the elements of lists or tuples are </p>
+      <ul>
+         <li>strings</li>
+         <li>integers</li>
+         <li>floating-points</li>
+      </ul>
+      <p>The elements of lists or tuples are not limited to the above, they can also be</p>
+      <ul>
+         <li>lists</li>
+         <li>tuples</li>
+         <li>dictionaries</li>
+      </ul>
+      <p>You can have lists inside of lists, tuples inside of tuples, tuples inside of lists, and so on.
+         (We will deal with dictionaries within dictionaries in another section.)
+      </p>
+      <p>A list within a list is sometimes called an <strong>array</strong>. Arrays are useful for
+         creating grid-like maps for text-based adventure games. Consider the map for
+         the game "Escape the Ship":
+      </p>
+      <div>
+         <iframe src="https://trinket.io/embed/python3/21e86baf22" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      </div>
+      <p>The map is a 3x4 grid created by putting 3 items into each of the 4 lists. 
+         Later we will learn how to define actions at each of those spots on the map.
+      </p>
+      <p>Since there is a list within a list, we need to use two indices to refer to an element. It is in the form of</p>
+      <blockquote>list_name[row][column]</blockquote>
+      <p>Remember that each row and column starts with 0 as the first one. For example:</p>
+      <div>
+         <iframe src="https://trinket.io/embed/python3/5999c119b2" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      </div>
+      <p>Similarly, we can change an element by using the row and column position:</p>
+      <div>
+         <iframe src="https://trinket.io/embed/python3/5c34d130c0" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      </div>
+      <p>However, if you only include one index then you will change an entire row. For example:</p>
+      <div>
+         <iframe src="https://trinket.io/embed/python3/7b7abc1cfc" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      </div>
+      <p>If you want to format your array into rows and columns when you print, you can import the module numpy and use the array() method (We'll learn more about this later).</p>
+      <div>
+         <iframe src="https://trinket.io/embed/python3/c7fe99de57" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+      </div>
+      <br>
+      <div class="linkContainer">
+         <a href="../toc.html" class = "toc">Table of Contents</a>
+         <a href="../index.html" class="home">Home</a>
+         <a href="data_structures.html" class="review">Data Structures Home</a>
+      </div>
+   </body>
+</html>
 
-<body>
-    <h1>Multiple Dimensional Lists</h1>
-<p>We have looked at examples so far where the elements of lists or tuples are </p>
-<ul>
-<li>strings</li>
-<li>integers</li>
-<li>floating-points</li>
-</ul>
-<p>The elements of lists or tuples are not limited to the above, they can also be</p>
-<ul>
-<li>lists</li>
-<li>tuples</li>
-<li>dictionaries</li>
-</ul>
-<p>You can have lists inside of lists, tuples inside of tuples, tuples inside of lists, and so on.
-     (We will deal with dictionaries within dictionaries in another section.)</p>
-<p>A list within a list is sometimes called an <strong>array</strong>. Arrays are useful for
-    creating grid-like maps for text-based adventure games. Consider the map for
-    the game "Escape the Ship":</p>
-<div>
-
-    <iframe src="https://trinket.io/embed/python3/21e86baf22" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
-</div>
-<p>The map is a 3x3 grid created by putting 3 lists into each of the 3 outer lists. 
-    Later we will learn how to define actions at each of those spots on the map.</p>
-    <div class="linkContainer">
-    <a href="../toc.html" class = "toc">Table of Contents</a>
-    <a href="../index.html" class="home">Home</a>
-    <a href="data_structures.html" class="review">Data Structures Home</a>
-    </div>
-    </body>
-    </html>
