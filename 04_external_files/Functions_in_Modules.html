@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../stylesheet.css">
+      <title>Storing Your Functions in Modules</title>
+   </head>
+   <body>
+      <h1>Storing Your Functions in Modules</h1>
+      <p>Partially Adapted from Matthes, Eric, "Chapter 8: Functions - Storing Your Functions in Modules", Python Crash Course (2 ed),
+          No Starch Press, Inc., 2019
+      </p>
+<p>As you might have realized, more complex programs often require more lines of code.
+    You can simplify the view of this code by breaking it into several files by category.
+    For example, "Escape the Ship" has 4 modules: enemies.py, player.py, ship.py, and items.py.
+    I separated blocks of code by category and stored them in modules. I then imported
+    functions and variables into my main program.</p>
+<blockquote>
+    An import statement tells Python to make the code in a module available in the
+    currently running program file. Storing your functions in a separate file allows
+    you to hide the details of your program’s code and focus on its higher-level logic.
+    It also allows you to reuse functions in many different programs. When you store your functions
+    in separate files, you can share those files with other programmers without
+    having to share your entire program. Knowing how to import functions
+    also allows you to use libraries of functions that other programmers have
+    written. (Matthes, 150)
+</blockquote>
+<p>Look again at the game "Escape the Ship" and see all the module files</p>
+<div class="linkContainer">
+<iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/RPG?lite=true"></iframe>
+</div>
+<h2>Importing an Entire Module</h2>
+<p>Looking at the example of "Escape the Ship", look at the file game.py. You will
+notice a statement import ship. If you look at player.py, you will notice import items
+and import ship on the top of the file. Similarly, in the file ship.py has import random,
+import enemies, import sys, and import items.</p>
+<blockquote>import [module]</blockquote>
+<p>means that the entire module is being imported (random and sys are from the Python Standard Library, but the entire module is
+being imported.)</p>
+<p>Looking again at the game.py and ship.py files, </p>
+<p>
+<img src="images/import_function.jpg">
+</p>
+<p>
+<img src="images/imported_function.jpg">
+</p>
+<p>When a function from a module is called, you can see from above that it is in the form of</p>
+<blockquote>module_name.function_name()</blockquote>
+<h2>Importing Specific Functions</h2>
+
+<br>
+<div class="linkContainer">
+   <a href="../toc.html" class = "toc">Table of Contents</a>
+   <a href="../index.html" class="home">Home</a>
+   <a href="external_files.html" class="review">External Files</a>
+</div>
+</body>
+</html>
