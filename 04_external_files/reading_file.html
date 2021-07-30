@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../stylesheet.css">
+      <title>Reading an External File</title>
+   </head>
+   <body>
+      <h1>Reading an External File</h1>
+      <p>Lesson partially adapted from “Python File Handling: How to Create Text File, Read, Write, Open, Append Files in Python.” Guru99, <a href="https://www.guru99.com/reading-and-writing-files-in-python.html" target="new">www.guru99.com/reading-and-writing-files-in-python.html.</a> </p>
+<p>Python is capable of reading and writing to files without importing any libraries.
+    However, working with files in Python is slightly different from working with programs like Microsoft Word or Excel. </p>
+<blockquote>
+In Windows, for example, a file can be any item manipulated, edited or created by the user/OS.
+That means files can be images, text documents, executables, and much more.
+Most files are organized by keeping them in individual folders.
+In Python, a file is categorized as either text or binary, and the difference between the two file types is important.
+Text files are structured as a sequence of lines, where each line includes a sequence of characters.
+This is what you know as code or syntax.
+<br>
+(“Reading and Writing Files in Python.” Python For Beginners, <a href="https://www.pythonforbeginners.com/files/reading-and-writing-files-in-python" target="new">www.pythonforbeginners.com/files/reading-and-writing-files-in-python</a>.)
+</blockquote>
+<h2>Opening Files</h2>
+<p>
+Text files are the easiest to change in Python. But before a file can be edited,
+you must open it. In order to open a file for writing or use in Python, you must
+rely on the built-in open () function. The argument of the open function is the
+ path to the file. If the file is in the current working directory of the program,
+  you can specify only its name. An argument is nothing more than a value that has
+ been provided to a function, which is relayed when you call it. So, for instance,
+ if we declare the name of a file as “filename.txt,” that name would be considered an argument.
+</p>
+<p>
+<img src="images/open_file.jpg">
+</p>
+<p>By adding a second argument to the open function, we can specify the mode:</p>
+<ul>
+<li>"r" means open in read mode, which is the default. </li>
+<li>"w" means write mode, for rewriting the contents of a file.</li>
+<li>"a" means append mode, for adding new content to the end of the file.</li>
+<li>“b” means open in binary mode, for non-text files such as images. Binary mode must be added to another one of the above modes.</li>
+</ul>
+<p>
+    <img src="images/open_mode.jpg">
+</p>
+
+
+<a href="https://www.programiz.com/python-programming/reading-csv-files" target="new">Reading CSV files in Python</a>
+      <br>
+      <div class="linkContainer">
+         <a href="../toc.html" class = "toc">Table of Contents</a>
+         <a href="../index.html" class="home">Home</a>
+         <a href="external_files.html" class="review">External Files</a>
+      </div>
+      </body>
+      </html>
