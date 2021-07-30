@@ -33,6 +33,13 @@ rely on the built-in open () function. The argument of the open function is the
 <p>
 <img src="images/open_file.jpg">
 </p>
+<p>Syntax of Python open file function </p>
+<blockquote>file_object  = open("filename", "mode")  </blockquote>
+<p>Here, </p>
+<ul>
+  <li><strong>filename:</strong> gives name of the file that the file object has opened.</li>
+  <li><strong>mode:</strong> attribute of a file object tells you which mode a file was opened in.</li>
+</ul>
 <p>By adding a second argument to the open function, we can specify the mode:</p>
 <ul>
 <li>"r" means open in read mode, which is the default. </li>
@@ -42,13 +49,17 @@ rely on the built-in open () function. The argument of the open function is the
 </ul>
 <p>
     <img src="images/open_mode.jpg">
-</p>
-<p>Let's look at an example of opening a file using a with statement:</p>
+<p>Let's look at the old way of opening and reading files:</p>
 <div class="linkContainer">
-	<iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/readfile?lite=true"></iframe>
+  <iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/readclosefile?lite=true"></iframe>
 </div>
-<p>When using a with statement, you do not need to close the file.</p>
-<p><a href="https://www.programiz.com/python-programming/reading-csv-files" target="new">Reading CSV files in Python</a></p>
+</p>
+<p>Using a with statement, eliminates the need to close the file. Let's look at an example of opening and reading a file using a with statement:</p>
+<div class="linkContainer">
+  <iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/readfile?lite=true"></iframe>
+</div>
+<p>So far we have just looked at examples of reading text files. For more information on using CSV files, visit the link below:<br>
+<a href="https://www.programiz.com/python-programming/reading-csv-files" target="new">Reading CSV files in Python</a></p>
       <br>
       <div class="linkContainer">
          <a href="../toc.html" class = "toc">Table of Contents</a>
