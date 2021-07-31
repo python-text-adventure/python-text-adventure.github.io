@@ -10,8 +10,29 @@
 	   
 	   
 	  <p>Lesson partially adapted from “Python File Handling: How to Create Text File, Read, Write, Open, Append Files in Python.” Guru99, <a href="https://www.guru99.com/reading-and-writing-files-in-python.html" target = "new">www.guru99.com/reading-and-writing-files-in-python.html.</a></p>
+	  <p>Examples adapted from Matthes, Eric. &quot;Chapter 10: Files and Exceptions.&quot; Python Crash Course. 2nd ed. No Starch Press, May 2019.</p>
 	  <h2>Reading File Line by Line</h2>
-	   <p>If the file or data is too big to read, we can code it so it reads the data line by line </p>
+	   <p>If the file or data is too big to read, we can code it so it reads the data line by line by using a method called readlines().</p>
+	   <div class="linkContainer">
+  <iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/piline?lite=true"></iframe>
+</div>
+<p>You will notice there is a blank line between each line of digits of pi.</p>
+<p>We can put the digits all on the same line by using a method called rstrip() that gets rid of the blank lines.</p>
+<div class="linkContainer">
+  <iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/pi_whitespace?lite=true"></iframe>
+</div>
+<p>We can get rid of the whitespacces entirely by using the method strip().</p>
+<div class="linkContainer">
+  <iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/pinowhitespace?lite=true"></iframe>
+</div>
+<p>We can use readlines() and strip() to make a short program to check if a date is in the first million digits of pi:</p>
+<div class="linkContainer">
+  <iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/pidate?lite=true"></iframe>
+</div>
+<p>We can even replace text by using the replace() method:</p>
+<div class="linkContainer">
+  <iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/hero_replace?lite=true"></iframe>
+</div>
 	   <br>
 	  <div class="linkContainer">
          <a href="../toc.html" class = "toc">Table of Contents</a>
