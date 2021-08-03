@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../stylesheet.css">
+      <title>Types of Errors in Python</title>
+   </head>
+   <body>
+   <h1>Types of Errors in Python</h1>
+	   
+	   <h2>Syntax Errors</h2>
+	   <p>Syntax errors, also known as parsing errors, is the most common type of errors you may have encountered so far while using Python. For example:</p>
+	   <div>
+	   <iframe src="https://trinket.io/embed/python3/2315158fdc" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+	   </div>
+	   <p>If I try to print the text, Hello World, without using quotation marks, then we get a SyntaxError. Anything within the brackets (or argument), that does not have quotation marks, Python expects it to be a variable with no spaces. If I try to print the text, Hello, without using quotation marks, Python doesn’t realize it is a syntax error but instead thinks we are trying to print a variable called Hello that we haven’t defined.</p>
+	   <div>
+	   <iframe src="https://trinket.io/embed/python3/4610937067" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+	   </div>
+	   <p>Simply put, syntax errors arise when Python is unable to understand a line of code. Usually, it caused by some missing character or space in order for the piece of code to execute successfully.</p>
+
+<h2>Logic Errors</h2>
+<p>Logic Errors are the most difficult type of error to fix in Python. They occur when the program runs without crashing, but it produces an incorrect result. Common sources of logic errors include:</p>
+<ul>
+  <li>
+    Misspelled identifiers</li>
+  <li>Variable mix-ups  </li>
+  <li>Incorrect indentation (usually caused by copying and pasting large blocks of code)  </li>
+</ul>
+<p>Sometimes PEP8 format checkers will catch logic errors, but often you have to debug the program by trial and error to find the problem. We will learn more about logic errors later in the semester.</p>
+
+<h2>Exceptions</h2>
+<p>You may already be familiar with the following exception errors: ValueError, ZeroDivisionError, and NameError. </p>
+<p><strong>ValueError </strong>- an operation or function receives an argument with an inappropriate value. For example:</p>
+<blockquote>
+	   # input an integer<br>
+x = int(input("Please input a number: "))
+   </blockquote>
+
+<p>	   
+We’re expecting the user to input an integer. If we don’t “handle the exception”, the program crashes if the user inputs a float or string characters.</p>
+<p>
+<strong>ZeroDivisionError</strong> - the second argument of a division or modulo is zero. Unless we tell our program how to “handle” division by zero, the program crashes.</p>
+<p>
+<strong>NameError  </strong>- a local or global variable is not found. If we forget to define a variable, when we try to use it, the program crashes. Like the SyntaxError above, sometimes if we don’t put quotation marks around our text, then Python thinks it is a NameError. Python has many other built-in exceptions: <a href="https://docs.python.org/3/library/exceptions.html" target="new">https://docs.python.org/3/library/exceptions.html</a>. You can skim through most of the list but make sure to read the section on OS exceptions. We will be dealing with OS exceptions when we are file handling in Python.</p>
+	   <br>
+      <div class="linkContainer">
+         <a href="../toc.html" class = "toc">Table of Contents</a>
+         <a href="../index.html" class="home">Home</a>
+         <a href="exception_handling.html" class="review">Exception Handling</a>
+      </div>
+</body>
+</html>
