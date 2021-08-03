@@ -1,0 +1,41 @@
+<<!doctype html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../stylesheet.css">
+      <title>Handling File Exceptions</title>
+   </head>
+<body>
+   <h1>Handling File Exceptions</h1>
+	<p>
+	If you didn’t already, go back and read the section on OS exception in Python: <a href="https://docs.python.org/3/library/exceptions.html" target="new">https://docs.python.org/3/library/exceptions.html</a></p>
+<p>
+You can also add an else to a try-except statement:
+	</p>
+<p><img src="images/try_except_else.png" alt=""/><br>
+	Image Source: Real Python. “Python Exceptions: An Introduction – Real Python.” Real Python, Real Python, 23 July 2018, <a href="https://realpython.com/python-exceptions/" target="new">realpython.com/python-exceptions/</a>.
+	</p>
+	<p>If there are no exceptions then the code will run the else statement.</p>
+	<p>Consider the age example again:</p>
+	<div>
+	<iframe src="https://trinket.io/embed/python3/ae8c7cc26d" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+	</div>
+<p>We can also add a finally statement that will always run regards if there was an exception or not.</p>
+	<p><img src="images/try_except_else_finally.png" alt=""/><br>
+	Image Source: Real Python. “Python Exceptions: An Introduction – Real Python.” Real Python, Real Python, 23 July 2018, <a href="https://realpython.com/python-exceptions/" target="new">realpython.com/python-exceptions/</a>.
+	</p>
+	<div>
+	<iframe src="https://trinket.io/embed/python3/2e9b3f9cc3" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+	</div>
+	<p>A finally statement is useful for when working with external files for closing them and printing verification statements.</p>
+	<div class="linkContainer">
+  <iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/herofinally?lite=true"></iframe>
+</div>
+	<br>
+      <div class="linkContainer">
+         <a href="../toc.html" class = "toc">Table of Contents</a>
+         <a href="../index.html" class="home">Home</a>
+         <a href="exception_handling.html" class="review">Exception Handling</a>
+      </div>
+</body>
+</html>
