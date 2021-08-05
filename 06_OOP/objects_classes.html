@@ -30,12 +30,23 @@
 	</div>
 	
 	<p><a href="https://github.com/programiz/python-course/blob/master/20-object-oriented-programming.md" target="new">Solution</a></p>
-	<p>Additional examples from <a href="https://www.programiz.com/python-programming/object-oriented-programming" target="new">Programiz: Python Object Oriented Programming</a></p>
+	<p>Additional examples can be found at <a href="https://www.programiz.com/python-programming/object-oriented-programming" target="new">Programiz: Python Object Oriented Programming</a></p>
 	<p>Let's consider a class called Hero for an RPG:</p>
 	<div class="linkContainer">
 	<iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/Heroclass?lite=true"></iframe>
 </div>
-<p>Here is a program that calculates the the cost of a movie, drink, and popcorn:</p>
+<p>Here is a program that calculates the the cost of a movie, drink, and popcorn. You will notice that there are attributes like __dollars and __cents where the __ tells the program that these are private and cannot be accessed outside the class definition. You can see that in line 39, </p>
+<blockquote>drink_price.youwish = drink_price.__dollars * 100000</blockquote>
+<p>__dollars is outside the class definition. If you run the program you will receive</p>
+<blockquote>Traceback (most recent call last):<br>
+  File "main.py", line 39, in &lt;module&gt; <br>
+	drink_price.youwish = drink_price.__dollars * 100000 <br>
+AttributeError: 'Currency' object has no attribute '__dollars'</blockquote>
+<p>because the program does not recognize __dollars outside the class.</p>
+<div class="linkContainer">
+	<iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/CurrencyBasics?lite=true"></iframe>
+</div>
+<p>Here is a corrected version of the above program, where line 39 is removed.</p>
 	<div class="linkContainer">
 	<iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/Currency?lite=true"></iframe>
 </div>
