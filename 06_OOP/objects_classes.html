@@ -16,10 +16,10 @@
 	</p>
 	<ul>
 	  <li>Create a class name Triangle</li>
-	  <li>Create an object from it. the object will have three ttritbutes names a, b, c that repreent the sides of the triangle.</li>
+	  <li>Create an object from it. the object will have three attributes names a, b, c that represent the sides of the triangle.</li>
 	  <li>The Triangle class will have two methods:
 	    <ul>
-	      <li>the init method to initiaze the sides</li>
+	      <li>the init method to initialize the sides</li>
 	      <li>a method to calculate the perimeter of the triangle from its sides</li>
         </ul>
       </li>
@@ -35,7 +35,8 @@
 	<div class="linkContainer">
 	<iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/Heroclass?lite=true"></iframe>
 </div>
-<p>Here is a program that calculates the the cost of a movie, drink, and popcorn. You will notice that there are attributes like __dollars and __cents where the __ tells the program that these are private and cannot be accessed outside the class definition. You can see that in line 39, </p>
+<p>Here is a program that calculates the the cost of a movie, drink, and popcorn. You will notice that there are attributes like __dollars and __cents where the __ tells the program that these are private and cannot be accessed outside the class definition. We would make attributes private to protect them from being changed from their initial value.</p>
+<p>You can see that in line 39, </p>
 <blockquote>drink_price.youwish = drink_price.__dollars * 100000</blockquote>
 <p>__dollars is outside the class definition. If you run the program you will receive</p>
 <blockquote>Traceback (most recent call last):<br>
@@ -44,7 +45,7 @@
 AttributeError: 'Currency' object has no attribute '__dollars'</blockquote>
 <p>because the program does not recognize __dollars outside the class.</p>
 <div class="linkContainer">
-	<iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/CurrencyBasics?lite=true"></iframe>
+  <iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/CurrencyBasics?lite=true"></iframe>
 </div>
 <p>Here is a corrected version of the above program, where line 39 is removed.</p>
 	<div class="linkContainer">
