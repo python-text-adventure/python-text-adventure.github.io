@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../stylesheet.css">
+<title>What is a Sorting Algorthim?</title>
+</head>
+
+<body>
+<h1>Recursive Sorting Algorithms</h1>
+<p>Some of the sorting algortihms <a href="sorting_alg.html"> previously discussed </a> are recursive. It is easiest to see the recursion when you look at the code.</p>
+<h2>Bubble Sort</h2>
+<p>
+"The bubble sort makes multiple passes through a list. It compares adjacent items and exchanges those that are out of order. Each pass through the list places the next largest value in its proper place. In essence, each item 'bubbles' up to the location where it belongs." ("The Bubble Sort", Interactive Python)<br>
+Bubble Sort is not recursive.
+</p>
+<p>
+    <div class="linkContainer">
+      <iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/bubblesort?lite=true"></iframe>
+    </div>
+</p>
+<h2>Insertion Sort</h2>
+<p>"The insertion sort...works in a slightly different way. It always maintains a sorted sublist in the lower positions of the list. Each new item is then 'inserted' back into the previous sublist such that the sorted sublist is one item larger." ("The Insertion Sort", Interactive Python)<br>
+Insertion sort is not recursive.
+</p>
+<p>
+    <div class="linkContainer">
+      <iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/insertionsort?lite=true"></iframe>
+    </div>
+</p>
+<h2>Merge Sort</h2>
+<p>
+<blockquote>
+    Merge sort is a recursive algorithm that continually splits a list in half. If the list is empty or has one item, it is sorted by definition (the base case). If the list has more than one item, we split the list and recursively invoke a merge sort on both halves. Once the two halves are sorted, the fundamental operation, called a merge, is performed. Merging is the process of taking two smaller sorted lists and combining them together into a single, sorted, new list.("The Merge Sort", Interactive Python)
+</blockquote>
+</p>
+<p>
+    <div class="linkContainer">
+      <iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/mergesort?lite=true"></iframe>
+    </div>
+</p>
+<h2>Quick Sort</h2>
+<p>
+<blockquote>
+    A quick sort first selects a value, which is called the pivot value. Although there are many different ways to choose the pivot value, we will simply use the first item in the list. The role of the pivot value is to assist with splitting the list. The actual position where the pivot value belongs in the final sorted list, commonly called the split point, will be used to divide the list for subsequent calls to the quick sort.("The Quick Sort", Interactive Python)
+</blockquote><br>
+Quick Sort is a recursive algorithm.
+</p>
+<p>
+    <div class="linkContainer">
+      <iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/quicksort?lite=true"></iframe>
+    </div>
+</p>
+<h2>Sort() and Sorted()</h2>
+<p>
+    Fortunately for us, now Python has a built-in method for permenantly sorting, sort(), and a built-in function for temporary sorting, sorted().
+</p>
+<p>
+    <div class="linkContainer">
+      <iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/sortsorted?lite=true"></iframe>
+    </div>
+</p>
+<p>
+    Using these built-in commands, it is easy for us to sort nested lists.
+</p>
+<p>
+    <div class="linkContainer">
+      <iframe frameborder="0" width="100%" height="1600px" src="https://replit.com/@janicecotcher/nestedsort?lite=true"></iframe>
+    </div>
+</p>
+<p>We can sort other types of nested data using a lambda function, a topic we do not explore in CS 30.</p>
+<p>
+    <div class="linkContainer">
+       <a href="../toc.html" class = "toc">Table of Contents</a>
+       <a href="../index.html" class="home">Home</a>
+       <a href="sort_toc.html" class="review">Sorting Menu</a>
+    </div>
+</body>
+</html>
